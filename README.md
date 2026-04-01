@@ -17,7 +17,7 @@ This project is a comprehensive analysis of the modern job market for Data Analy
 
 ### 1. The "Sweet Spot" (Salary vs. Demand)
 This scatter plot identifies which job titles fall into the "High Salary / High Demand" quadrant.
-![Sweet Spot Analysis](assets/sweet_spot_analysis.png)
+![the sweet spot salary vs demand.png](assets/sweet_spot_analysis.png)
 
 ### 2. Salary Distribution by Title
 A ranking of the top 10 highest-paying roles from the dataset.
