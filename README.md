@@ -1,49 +1,30 @@
-# 📊 SQL Project: Data Analyst Job Market Analysis
+# 📊 SQL & Data Visualization Project: Job Market Analysis
 
 ## 🎯 Project Overview
-This project is a deep dive into the modern job market for Data Analysts. Using a database of over 10,000 job postings, I built a **Star Schema** to analyze salary trends, high-demand skills, and the "Sweet Spot" where salary and job security meet.
+This project is a comprehensive analysis of the modern job market for Data Analysts. Utilizing a massive dataset of **780,000+ job postings**, I built a robust **PostgreSQL Star Schema** to uncover salary trends and identify the "Sweet Spot" where high compensation meets high job security.
 
 ## 🛠️ The Tech Stack
-- **Database:** PostgreSQL
-- **Tools:** VS Code, Git, GitHub
-- **Concepts:** CTEs, Joins, Window Functions, Schema Design
-
-## 🗄️ Database Architecture
-I designed a professional-grade schema with the following core components:
-- **`job_postings_fact`**: The central table containing salary, location, and job titles.
-- **`skills_dim`**: A dimension table for all technical skills (Python, SQL, Tableau, etc.).
-- **`companies_dim`**: Information on the organizations hiring for these roles.
+- **Database:** PostgreSQL (Advanced SQL)
+- **Data Visualization:** Python (Matplotlib) & **Tableau**
+- **Tools:** VS Code, Git/GitHub
 
 ## 🚀 Key Business Insights
-- **The "Sweet Spot" Analysis:** Combined demand count and average salary to find the most valuable skills for remote Data Analysts.
-- **Top 10 Paying Roles:** Identified the highest-earning remote positions in the current market.
-- **Skill Demand:** Tracked the most frequent requirements for remote job postings.
+- **The "Sweet Spot":** Specialized roles like **Data Architect** command the highest average salary at **$157,555**.
+- **Remote Advantage:** Remote Data Analyst positions show an average salary of **$93,346**, which is roughly **$6,500 higher** than non-remote counterparts ($86,760).
+- **Seniority Premium:** Moving from a "Junior" role ($63k) to a "Lead" role ($113k) represents an **80% increase** in earning potential.
 
+## 📈 Visualizations
+
+### 1. The "Sweet Spot" (Salary vs. Demand)
+This scatter plot identifies which job titles fall into the "High Salary / High Demand" quadrant.
+![Sweet Spot Analysis](assets/the%20sweet%20spot%20salary%20vs%20demand.png)
+### 2. Salary Distribution by Title
+A ranking of the top 10 highest-paying roles from the dataset.
+![Salary Distribution](assets/top%2010%20highest%20job%20titles.png)
+### 3. Interactive Tableau Dashboard
+I am developing an interactive dashboard to allow for dynamic filtering of these job trends.
+![Job Demand](assets/number%20of%20job%20postings%20by%20title.png)
 ## 📁 Repository Structure
-- `1_create_database.sql`: SQL script to initialize the project.
-- `2_create_tables.sql`: Script to define the Star Schema.
-- `3_modify_tables.sql`: Commands for data updates and cleaning.# 📊 SQL Project: Data Analyst Job Market Analysis
-
-## 🎯 Project Overview
-This project is a deep dive into the modern job market for Data Analysts. Using a database of over 10,000 job postings, I built a **Star Schema** to analyze salary trends, high-demand skills, and the "Sweet Spot" where salary and job security meet.
-
-## 🛠️ The Tech Stack
-- **Database:** PostgreSQL
-- **Tools:** VS Code, Git, GitHub
-- **Concepts:** CTEs, Joins, Window Functions, Schema Design
-
-## 🗄️ Database Architecture
-I designed a professional-grade schema with the following core components:
-- **`job_postings_fact`**: The central table containing salary, location, and job titles.
-- **`skills_dim`**: A dimension table for all technical skills (Python, SQL, Tableau, etc.).
-- **`companies_dim`**: Information on the organizations hiring for these roles.
-
-## 🚀 Key Business Insights
-- **The "Sweet Spot" Analysis:** Combined demand count and average salary to find the most valuable skills for remote Data Analysts.
-- **Top 10 Paying Roles:** Identified the highest-earning remote positions in the current market.
-- **Skill Demand:** Tracked the most frequent requirements for remote job postings.
-
-## 📁 Repository Structure
-- `1_create_database.sql`: SQL script to initialize the project.
-- `2_create_tables.sql`: Script to define the Star Schema.
-- `3_modify_tables.sql`: Commands for data updates and cleaning.
+- `1_create_database.sql`: SQL script to initialize the project environment.
+- `2_create_tables.sql`: Script defining the Star Schema architecture.
+- `3_modify_tables.sql`: Data ingestion (`COPY` commands) and cleaning.
