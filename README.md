@@ -17,13 +17,13 @@ This project is a comprehensive analysis of the modern job market for Data Analy
 
 ### 1. The "Sweet Spot" (Salary vs. Demand)
 This scatter plot identifies which job titles fall into the "High Salary / High Demand" quadrant.
-![Sweet Spot Analysis](assets/the%20sweet%20spot%20salary%20vs%20demand.png)
+![Sweet Spot](assets/sweet_spot.png)
 ### 2. Salary Distribution by Title
 A ranking of the top 10 highest-paying roles from the dataset.
-![Salary Distribution](assets/top%2010%20highest%20job%20titles.png)
+![Salary Distribution](assets/top_10_salaries.png)
 ### 3. Interactive Tableau Dashboard
 I am developing an interactive dashboard to allow for dynamic filtering of these job trends.
-![Job Demand](assets/number%20of%20job%20postings%20by%20title.png)
+![Job Demand](assets/job_postings_by_title.png)
 ## 📁 Repository Structure
 - `1_create_database.sql`: SQL script to initialize the project environment.
 - `2_create_tables.sql`: Script defining the Star Schema architecture.
